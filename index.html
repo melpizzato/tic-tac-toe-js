@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-tac-toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Tic-tac-toe</h1>
+      </header>
+      <section id="playerName">
+        <label for="player1">Player 1 (X):</label>
+        <input type="text" id="player1" placeholder="Player 1 name" />
+        <label for="player2">Player 2 (O):</label>
+        <input type="text" id="player2" placeholder="Player 2 name" />
+      </section>
+      <section id="mainGame">
+        <button id="startGame">Start game!</button>
+        <h2>Player Turn: <span id="turnPlayer"></span></h2>
+        <section id="gameBoard">
+          <span class="cursor-pointer" data-region="0.0"></span>
+          <span class="cursor-pointer" data-region="0.1"></span>
+          <span class="cursor-pointer" data-region="0.2"></span>
+          <span class="cursor-pointer" data-region="1.0"></span>
+          <span class="cursor-pointer" data-region="1.1"></span>
+          <span class="cursor-pointer" data-region="1.2"></span>
+          <span class="cursor-pointer" data-region="2.0"></span>
+          <span class="cursor-pointer" data-region="2.1"></span>
+          <span class="cursor-pointer" data-region="2.2"></span>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
